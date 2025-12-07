@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside the Machine: Computer Components Explained</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="particles"></canvas>
+    <div class="background-glow"></div>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="glitch" data-text="Inside the Machine">Inside the Machine</h1>
+            <p class="subtitle">Unveiling the power behind your pixels.</p>
+            <a href="#components" class="btn-scroll"><span></span>Explore Components</span></a>
+            <a href="#build-guide" class="btn-scroll btn-secondary"><span>Learn to Build</span></a>
+        </div>
+    </header>
+
+    <main id="components" class="components-section">
+        <div class="container">
+            <h2 class="section-title">Core Components</h2>
+            <div class="grid">
+                <!-- CPU -->
+                <div class="card" data-component="cpu">
+                    <div class="card-image-container">
+                        <div class="card-image-placeholder" id="img-cpu"
+                            style="background-image: url('assets/cpu.png');"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>CPU</h3>
+                        <p class="short-desc">The Brain</p>
+                    </div>
+                </div>
+
+                <!-- GPU -->
+                <div class="card" data-component="gpu">
+                    <div class="card-image-container">
+                        <div class="card-image-placeholder" id="img-gpu"
+                            style="background-image: url('assets/gpu.png');"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>GPU</h3>
+                        <p class="short-desc">The Artist</p>
+                    </div>
+                </div>
+
+                <!-- RAM -->
+                <div class="card" data-component="ram">
+                    <div class="card-image-container">
+                        <div class="card-image-placeholder" id="img-ram"
+                            style="background-image: url('assets/ram.png');"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>RAM</h3>
+                        <p class="short-desc">Short-term Memory</p>
+                    </div>
+                </div>
+
+                <!-- Storage -->
+                <div class="card" data-component="storage">
+                    <div class="card-image-container">
+                        <div class="card-image-placeholder" id="img-storage"
+                            style="background-image: url('assets/storage.png');"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Storage</h3>
+                        <p class="short-desc">Long-term Memory</p>
+                    </div>
+                </div>
+
+                <!-- Motherboard -->
+                <div class="card" data-component="motherboard">
+                    <div class="card-image-container">
+                        <div class="card-image-placeholder" id="img-motherboard"
+                            style="background-image: url('assets/motherboard.png');"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Motherboard</h3>
+                        <p class="short-desc">The Backbone</p>
+                    </div>
+                </div>
+
+                <!-- PSU -->
+                <div class="card" data-component="psu">
+                    <div class="card-image-container">
+                        <div class="card-image-placeholder" id="img-psu"
+                            style="background-image: url('assets/psu.png');"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>PSU</h3>
+                        <p class="short-desc">The Heart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Build Guide Section -->
+    <section id="build-guide" class="build-section">
+        <div class="container">
+            <h2 class="section-title">How to Build Your Computer</h2>
+            <p class="build-intro">Follow these steps to assemble your own custom PC. Take your time and work carefully!
+            </p>
+
+            <div class="build-steps">
+                <!-- Step 1 -->
+                <div class="build-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Prepare Your Workspace</h3>
+                        <p>Clear a large, clean surface. Use an anti-static mat if possible. Ground yourself by touching
+                            a metal object to discharge static electricity. Gather your tools: Phillips screwdriver, zip
+                            ties for cable management, and thermal paste (usually comes with CPU cooler).</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="build-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Install the CPU</h3>
+                        <p>Open the CPU socket on the motherboard by lifting the retention arm. Align the CPU with the
+                            socket (look for the golden triangle or notches). Gently place it in—never force it. Lower
+                            the retention arm to secure it. The CPU should drop in effortlessly if aligned correctly.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="build-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Install the CPU Cooler</h3>
+                        <p>Apply thermal paste (a pea-sized dot in the center of the CPU, or use pre-applied paste).
+                            Attach the cooler according to manufacturer instructions—this varies by model. Connect the
+                            cooler's fan cable to the CPU_FAN header on the motherboard.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="build-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Install RAM</h3>
+                        <p>Open the RAM slot clips on both ends. Align the notch on the RAM stick with the slot. Press
+                            down firmly until both clips snap into place. For dual-channel configuration, check your
+                            motherboard manual for correct slot placement (usually slots 2 and 4).</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="build-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Install M.2 SSD (if applicable)</h3>
+                        <p>Locate the M.2 slot on your motherboard. Remove the mounting screw, insert the SSD at a
+                            30-degree angle into the slot, then press down and secure with the screw. Some motherboards
+                            have a heatsink—attach it if included.</p>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="build-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Install Motherboard I/O Shield & Standoffs</h3>
+                        <p>Snap the I/O shield (the metal plate that came with your motherboard) into the case from the
+                            inside. Install motherboard standoffs (brass spacers) in the case at positions matching your
+                            motherboard's screw holes. This prevents shorts.</p>
+                    </div>
+                </div>
+
+                <!-- Step 7 -->
+                <div class="build-step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>Mount the Motherboard</h3>
+                        <p>Carefully lower the motherboard into the case, aligning the I/O ports with the shield and
+                            screw holes with standoffs. Screw it in gently—don't overtighten. Work in a star pattern to
+                            ensure even pressure.</p>
+                    </div>
+                </div>
+
+                <!-- Step 8 -->
+                <div class="build-step">
+                    <div class="step-number">8</div>
+                    <div class="step-content">
+                        <h3>Install the Power Supply (PSU)</h3>
+                        <p>Place the PSU in its bay (usually bottom-rear of case). Orient the fan correctly—typically
+                            facing down if there's a vent, or facing into the case if not. Secure with four screws from
+                            the back of the case.</p>
+                    </div>
+                </div>
+
+                <!-- Step 9 -->
+                <div class="build-step">
+                    <div class="step-number">9</div>
+                    <div class="step-content">
+                        <h3>Install the GPU</h3>
+                        <p>Remove the necessary PCIe slot covers from the case. Align the GPU with the top PCIe x16 slot
+                            (closest to CPU). Press down firmly until it clicks. Secure the GPU bracket to the case with
+                            screws. Connect PCIe power cables from PSU if required.</p>
+                    </div>
+                </div>
+
+                <!-- Step 10 -->
+                <div class="build-step">
+                    <div class="step-number">10</div>
+                    <div class="step-content">
+                        <h3>Install Storage Drives</h3>
+                        <p>Mount SSDs in 2.5" bays or HDD in 3.5" bays using screws or tool-less brackets. Connect SATA
+                            data cables to the motherboard and SATA power cables from the PSU. Ensure cables are routed
+                            neatly.</p>
+                    </div>
+                </div>
+
+                <!-- Step 11 -->
+                <div class="build-step">
+                    <div class="step-number">11</div>
+                    <div class="step-content">
+                        <h3>Connect Front Panel & Case Cables</h3>
+                        <p>Connect power button, reset button, power LED, and HDD LED to the motherboard headers (check
+                            manual for pinout). Connect USB headers, audio headers, and any RGB/fan controllers. Connect
+                            case fans to motherboard or fan hub.</p>
+                    </div>
+                </div>
+
+                <!-- Step 12 -->
+                <div class="build-step">
+                    <div class="step-number">12</div>
+                    <div class="step-content">
+                        <h3>Connect Power Cables</h3>
+                        <p>Connect the 24-pin ATX power to motherboard, 8-pin (or 4+4 pin) CPU power near the CPU
+                            socket, PCIe power to GPU (if needed), and SATA/Molex power to drives. Double-check all
+                            connections are secure.</p>
+                    </div>
+                </div>
+
+                <!-- Step 13 -->
+                <div class="build-step">
+                    <div class="step-number">13</div>
+                    <div class="step-content">
+                        <h3>Cable Management</h3>
+                        <p>Route cables through the back panel of the case. Use zip ties or velcro straps to bundle
+                            cables neatly. Good cable management improves airflow and aesthetics. Hide excess cables
+                            behind the motherboard tray.</p>
+                    </div>
+                </div>
+
+                <!-- Step 14 -->
+                <div class="build-step">
+                    <div class="step-number">14</div>
+                    <div class="step-content">
+                        <h3>Final Check & First Boot</h3>
+                        <p>Double-check all connections. Ensure no cables obstruct fans. Close the case. Connect monitor
+                            to GPU (not motherboard), keyboard, and mouse. Plug in the power cable, flip the PSU switch,
+                            and press the power button. If it boots to BIOS, congratulations! Install your operating
+                            system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="build-tips">
+                <h3>💡 Pro Tips</h3>
+                <ul>
+                    <li><strong>Don't force anything</strong> - If a component doesn't fit easily, you're probably doing
+                        it wrong</li>
+                    <li><strong>Consult manuals</strong> - Each motherboard is different; check the manual for specific
+                        headers and slots</li>
+                    <li><strong>Test outside the case first</strong> - Advanced builders often test POST (Power-On
+                        Self-Test) before full assembly</li>
+                    <li><strong>Update BIOS</strong> - After successful boot, check for BIOS updates for better
+                        stability</li>
+                    <li><strong>Enable XMP/DOCP</strong> - In BIOS, enable XMP (Intel) or DOCP (AMD) to run RAM at rated
+                        speeds</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image" id="modal-img"></div>
+                <div class="modal-text">
+                    <h2 id="modal-title">Component Name</h2>
+                    <p class="modal-analogy" id="modal-analogy">Analogy goes here.</p>
+                    <p class="modal-desc" id="modal-desc">Description goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
